@@ -1,6 +1,7 @@
 name: 'CI'
 description: 'Runs the Portfolio React CI'
-
+env:
+  working-directory: ./portfolio
 runs:
   using: composite
   steps:
@@ -8,8 +9,8 @@ runs:
       shell: bash
     - name: Install Dependencies
       run: |
-        cd portfolio
         yarn install
+      working-directory: ${{ env.working-directory }}
       shell: bash
     - run: echo "::endgroup::"
       shell: bash
@@ -18,8 +19,8 @@ runs:
       shell: bash
     - name: Check Style
       run: |
-        cd portfolio
         yarn lint
+      working-directory: ${{ env.working-directory }}
       shell: bash
     - run: echo "::endgroup::"
       shell: bash
@@ -28,8 +29,8 @@ runs:
       shell: bash
     - name: Run Tests
       run: |
-        cd portfolio
         yarn test
+      working-directory: ${{ env.working-directory }}
       shell: bash
     - run: echo "::endgroup::"
       shell: bash
