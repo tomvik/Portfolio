@@ -1,0 +1,26 @@
+name: Portfolio CD
+
+on:
+  push:
+    [main]
+  pull_request:
+    [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node_version: [14]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: CI
+        uses: ./.github/workflows/Portfolio-CI
+
+      - name: Deploy
+        run: |
+          cd portfolio
+          yarn deploy
