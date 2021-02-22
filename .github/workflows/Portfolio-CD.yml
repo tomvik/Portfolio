@@ -3,8 +3,6 @@ name: Portfolio CD
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
   deploy:
