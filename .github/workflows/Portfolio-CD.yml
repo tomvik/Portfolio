@@ -32,10 +32,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn
 
-      - name: Run CI
+      - name: CI
         uses: ./.github/actions/Portfolio-CI
 
-      - name: Deploy
+      - name: Build
         run: |
           cd portfolio
-          yarn deploy
+          yarn build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./portfolio/build
