@@ -12,7 +12,7 @@ runs:
         echo ${{ env.working-directory }}
         echo pwd
         yarn install
-      working-directory: ${{ env.working-directory }}
+      working-directory: ./portfolio
       shell: bash
     - run: echo "::endgroup::"
       shell: bash
