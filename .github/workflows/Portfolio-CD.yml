@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: CI
-        uses: ./.github/workflows/Portfolio-CI
+        uses: actions/Portfolio-CI@v1
 
       - name: Deploy
         run: |
