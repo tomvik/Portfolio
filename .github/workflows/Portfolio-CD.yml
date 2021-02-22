@@ -38,7 +38,7 @@ jobs:
       - name: CI
         uses: ./.github/actions/Portfolio-CI
         with:
-          working-directory: 
+          working-directory: ${{ env.working-directory }} 
 
       - name: Build
         run: |
