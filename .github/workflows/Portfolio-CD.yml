@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+env:
+  working-directory: ./portfolio
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -34,6 +37,8 @@ jobs:
 
       - name: CI
         uses: ./.github/actions/Portfolio-CI
+        with:
+          working-directory: 
 
       - name: Build
         run: |

@@ -1,21 +1,39 @@
 name: 'CI'
 description: 'Runs the Portfolio React CI'
+inputs:
+  working-directory:
+    description: 'path to working directory'
+    default: ./portfolio
 
 runs:
   using: composite
   steps:
+    - run: echo "::group::Install Dependencies"
+      shell: bash
     - name: Install Dependencies
       run: |
-        cd portfolio
         yarn install
+      working-directory: ${{ inputs.working-directory }}
+      shell: bash
+    - run: echo "::endgroup::"
+      shell: bash
+
+    - run: echo "::group::Check Style"
       shell: bash
     - name: Check Style
       run: |
-        cd portfolio
         yarn lint
+      working-directory: ${{ inputs.working-directory }}
+      shell: bash
+    - run: echo "::endgroup::"
+      shell: bash
+
+    - run: echo "::group::Run Tests"
       shell: bash
     - name: Run Tests
       run: |
-        cd portfolio
         yarn test
+      working-directory: ${{ inputs.working-directory }}
+      shell: bash
+    - run: echo "::endgroup::"
       shell: bash
