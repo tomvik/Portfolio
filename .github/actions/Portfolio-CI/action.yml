@@ -1,8 +1,8 @@
 name: 'CI'
 description: 'Runs the Portfolio React CI'
-env:
-  working-directory: ./portfolio
 runs:
+  env:
+    working-directory: ./portfolio
   using: composite
   steps:
     - run: echo "::group::Install Dependencies"
