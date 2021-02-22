@@ -9,6 +9,8 @@ runs:
       shell: bash
     - name: Install Dependencies
       run: |
+        echo ${{ env.working-directory }}
+        echo pwd
         yarn install
       working-directory: ${{ env.working-directory }}
       shell: bash
