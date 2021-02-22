@@ -34,15 +34,5 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install Dependencies
-        run: |
-          cd portfolio
-          yarn install
-      - name: Check Style
-        run: |
-          cd portfolio
-          yarn lint
-      - name: Run Tests
-        run: |
-          cd portfolio
-          yarn test
+      - name: Run CI
+        uses: ./.github/actions/Portfolio-CI

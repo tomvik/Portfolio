@@ -1,0 +1,21 @@
+name: 'CI'
+description: 'Runs the Portfolio React CI'
+
+runs:
+  using: composite
+  steps:
+    - name: Install Dependencies
+      run: |
+        cd portfolio
+        yarn install
+      shell: bash
+    - name: Check Style
+      run: |
+        cd portfolio
+        yarn lint
+      shell: bash
+    - name: Run Tests
+      run: |
+        cd portfolio
+        yarn test
+      shell: bash
