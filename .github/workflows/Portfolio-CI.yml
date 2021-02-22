@@ -2,9 +2,9 @@ name: Portfolio CI
 
 on:
   push:
-    [develop]
+    branches: [develop]
   pull_request:
-    [develop]
+    branches: [main, develop]
 
 jobs:
   CI:
