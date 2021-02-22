@@ -2,6 +2,7 @@ name: 'CI'
 description: 'Runs the Portfolio React CI'
 
 runs:
+  using: composite
   steps:
     - name: Install Dependencies
       run: |
