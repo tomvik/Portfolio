@@ -9,6 +9,6 @@ export const kNavLinks: NavLinkType = [
   { title: "Contact", path: "/Portfolio/contact" },
 ];
 
-export const kLinkedInLink: string = "https://www.linkedin.com/in/tomaslbmi/"
-export const kGithubLink: string = "https://github.com/tomvik"
-export const kEmail: string = "lugo.lbmi@gmail.com"
+export const kLinkedInLink: string = "https://www.linkedin.com/in/tomaslbmi/";
+export const kGithubLink: string = "https://github.com/tomvik";
+export const kEmail: string = "lugo.lbmi@gmail.com";

@@ -1,9 +1,9 @@
 import React from "react";
 
-import { AppBar, Container, Toolbar, Typography, IconButton } from "@material-ui/core";
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import MailIcon from '@material-ui/icons/Mail';
+import { AppBar, Container, Toolbar, IconButton } from "@material-ui/core";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import MailIcon from "@material-ui/icons/Mail";
 import styled from "styled-components";
 import { kLinkedInLink, kGithubLink, kEmail } from "../urls";
 
@@ -11,13 +11,13 @@ import { kLinkedInLink, kGithubLink, kEmail } from "../urls";
 // Link of current answer: https://stackoverflow.com/questions/4575826/how-to-push-a-footer-to-the-bottom-of-page-when-content-is-short-or-missing
 // Link of this answer: https://stackoverflow.com/questions/50303821/keeping-footer-down-at-the-bottom-with-material-ui-expansion-drawers
 const FooterStyled = styled.div`
-  z-index: 0
-`
+  z-index: 0;
+`;
 
 const Footer = () => {
   return (
     <FooterStyled>
-      <AppBar position="static" color="primary" >
+      <AppBar position="static" color="primary">
         <Container maxWidth="md">
           <Toolbar>
             <a href={kLinkedInLink} target="_blank" rel="noreferrer">
@@ -30,7 +30,7 @@ const Footer = () => {
                 <GitHubIcon fontSize="default" />
               </IconButton>
             </a>
-            <a href={`mailto: ${kEmail}?subject = Contact&body = Message`} >
+            <a href={`mailto: ${kEmail}?subject = Contact&body = Message`}>
               <IconButton edge="start" color="inherit" aria-label="home">
                 <MailIcon fontSize="default" />
               </IconButton>
@@ -38,8 +38,8 @@ const Footer = () => {
           </Toolbar>
         </Container>
       </AppBar>
-    </FooterStyled >
-  )
-}
+    </FooterStyled>
+  );
+};
 
-export default Footer
+export default Footer;

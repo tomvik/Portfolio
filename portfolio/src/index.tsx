@@ -12,8 +12,8 @@ const StyledWrapper = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: space-between
-`
+  justify-content: space-between;
+`;
 
 ReactDOM.render(
   <React.StrictMode>
