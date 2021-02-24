@@ -3,10 +3,27 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import styled from "styled-components";
+
+const StyledWrapper = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+`;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <StyledWrapper>
+        <Header />
+        <App />
+        <Footer />
+      </StyledWrapper>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
