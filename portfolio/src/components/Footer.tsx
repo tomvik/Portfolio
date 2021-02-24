@@ -1,27 +1,44 @@
 import React from "react";
 
-import { AppBar, Container, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Container, Toolbar, Typography, IconButton } from "@material-ui/core";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import MailIcon from '@material-ui/icons/Mail';
+import styled from "styled-components";
+import { kLinkedInLink, kGithubLink, kEmail } from "../urls";
 
 // TODO: Verify later if it needs to be used or not.
 // Link of current answer: https://stackoverflow.com/questions/4575826/how-to-push-a-footer-to-the-bottom-of-page-when-content-is-short-or-missing
 // Link of this answer: https://stackoverflow.com/questions/50303821/keeping-footer-down-at-the-bottom-with-material-ui-expansion-drawers
-// import styled from "styled-components";
-// const FooterStyled = styled.div`
-//   margin-top:calc(5% + 60px);
-//   bottom: 0;
-// `
+const FooterStyled = styled.div`
+  z-index: 0
+`
 
 const Footer = () => {
   return (
-    <AppBar position="static" color="primary" >
-      <Container maxWidth="md">
-        <Toolbar>
-          <Typography variant="body1" color="inherit">
-            © 2019 Gistia
-            </Typography>
-        </Toolbar>
-      </Container>
-    </AppBar>
+    <FooterStyled>
+      <AppBar position="static" color="primary" >
+        <Container maxWidth="md">
+          <Toolbar>
+            <a href={kLinkedInLink} target="_blank" rel="noreferrer">
+              <IconButton edge="start" color="inherit" aria-label="home">
+                <LinkedInIcon fontSize="default" />
+              </IconButton>
+            </a>
+            <a href={kGithubLink} target="_blank" rel="noreferrer">
+              <IconButton edge="start" color="inherit" aria-label="home">
+                <GitHubIcon fontSize="default" />
+              </IconButton>
+            </a>
+            <a href={`mailto: ${kEmail}?subject = Contact&body = Message`} >
+              <IconButton edge="start" color="inherit" aria-label="home">
+                <MailIcon fontSize="default" />
+              </IconButton>
+            </a>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </FooterStyled >
   )
 }
 
