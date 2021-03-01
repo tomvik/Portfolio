@@ -11,7 +11,7 @@ import {
   Fab,
 } from "@material-ui/core";
 import { Home, KeyboardArrowUp } from "@material-ui/icons";
-import { kNavLinks } from "../urls";
+import { kNavLinks } from "../../urls";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
 import SideDrawer from "./SideDrawer";
@@ -45,7 +45,7 @@ const Header = () => {
           <Toolbar>
             <Container maxWidth="md" className={classes.navbarDisplayFlex}>
               <Link to={home_path} key={"Icon-" + home_title}>
-                <IconButton edge="start" color="inherit" aria-label="home">
+                <IconButton edge="start" color="secondary" aria-label="home">
                   <Home fontSize="large" />
                 </IconButton>
               </Link>
