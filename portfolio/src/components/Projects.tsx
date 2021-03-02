@@ -1,6 +1,6 @@
 import { Container, Grid } from "@material-ui/core";
 import React from "react";
-import BlogCardDemo from "./ProjectCard/ProjectCard";
+import ProjectCard from "./ProjectCard/ProjectCard";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles(
@@ -35,7 +35,7 @@ const Projects = () => {
             alignItems="center"
           >
             <Grid item>
-              <BlogCardDemo
+              <ProjectCard
                 heading='What is Git?'
                 description='Git git git igt is a distributed version control system. Every dev has a working copy of the code and...'
                 date='01.March.2021'
@@ -43,7 +43,7 @@ const Projects = () => {
               />
             </Grid>
             <Grid item>
-              <BlogCardDemo
+              <ProjectCard
                 heading='What is Git?'
                 description='Git git git igt is a distributed version control system. Every dev has a working copy of the code and...'
                 date='02.March.2021'
@@ -51,7 +51,7 @@ const Projects = () => {
               />
             </Grid>
             <Grid item>
-              <BlogCardDemo
+              <ProjectCard
                 heading='What is Git?'
                 description='Git git git igt is a distributed version control system. Every dev has a working copy of the code and...'
                 date='022.March.2021'
@@ -59,7 +59,7 @@ const Projects = () => {
               />
             </Grid>
             <Grid item>
-              <BlogCardDemo
+              <ProjectCard
                 heading='What is Git?'
                 description='Git git git igt is a distributed version control system. Every dev has a working copy of the code and...'
                 date='03.March.2021'
@@ -67,7 +67,7 @@ const Projects = () => {
               />
             </Grid>
             <Grid item>
-              <BlogCardDemo
+              <ProjectCard
                 heading='What is Git?'
                 description='Git git git igt is a distributed version control system. Every dev has a working copy of the code and...'
                 date='04.March.2021'

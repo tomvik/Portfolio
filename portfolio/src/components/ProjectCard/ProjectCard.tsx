@@ -76,7 +76,7 @@ type ProjectCardProps = {
   image: string;
 }
 
-export const BlogCardDemo = React.memo(function BlogCard({ heading, description, date, image }: ProjectCardProps) {
+export const ProjectCard = React.memo(function BlogCard({ heading, description, date, image }: ProjectCardProps) {
   const styles = useStyles();
   const {
     button: buttonStyles,
@@ -106,4 +106,4 @@ export const BlogCardDemo = React.memo(function BlogCard({ heading, description,
   );
 });
 
-export default BlogCardDemo
+export default ProjectCard
