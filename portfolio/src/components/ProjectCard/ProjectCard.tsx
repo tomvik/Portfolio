@@ -27,7 +27,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     flexDirection: 'column',
     alignItems: 'center',
     paddingBottom: spacing(2),
-    [breakpoints.up('md')]: {
+    [breakpoints.up(960 + 233)]: {
       flexDirection: 'row',
       paddingTop: spacing(2),
     },
@@ -42,7 +42,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     borderRadius: spacing(2),
     backgroundColor: '#fff',
     position: 'relative',
-    [breakpoints.up('md')]: {
+    [breakpoints.up(960 + 233)]: { // Where does the 233 come from?
       width: '100%',
       marginLeft: spacing(-3),
       marginTop: 0,
