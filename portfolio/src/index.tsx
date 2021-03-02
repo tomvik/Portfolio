@@ -17,7 +17,7 @@ const StyledWrapper = styled.div`
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename='/Portfolio'>
       <StyledWrapper>
         <Header />
         <App />
