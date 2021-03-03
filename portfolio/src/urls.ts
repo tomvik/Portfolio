@@ -4,9 +4,9 @@ export type NavLinkType = {
 }[];
 
 export const kNavLinks: NavLinkType = [
-  { title: "Home", path: "/Portfolio/home" },
-  { title: "Projects", path: "/Portfolio/projects" },
-  { title: "Contact", path: "/Portfolio/contact" },
+  { title: "Home", path: "/home" },
+  { title: "Projects", path: "/projects" },
+  { title: "Contact", path: "/contact" },
 ];
 
 export const kLinkedInLink: string = "https://www.linkedin.com/in/tomaslbmi/";

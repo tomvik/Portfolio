@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/Portfolio/home" component={Home} />
-        <Route exact path="/Portfolio/projects" component={Projects} />
-        <Route exact path="/Portfolio/contact" component={Contact} />
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/contact" component={Contact} />
 
-        <Redirect to="/Portfolio/home" />
+        <Redirect to="/home" />
       </Switch>
     </div>
   );
