@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "heading": "Project 1",
+      "date": "01.01.01",
+      "image": "assets/images/flappy_bird.JPG",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "heading": "Project 2",
+      "date": "02.02.02",
+      "image": "assets/images/natural_selection.JPG",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "heading": "Project 3",
+      "date": "03.03.03",
+      "image": "assets/images/red_ball.JPG",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ]
+}
