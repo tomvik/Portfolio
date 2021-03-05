@@ -1,22 +1,46 @@
 {
   "projects": [
     {
-      "heading": "Project 1",
-      "date": "01.01.01",
-      "image": "assets/images/flappy_bird.JPG",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "heading": "Rescue Maze Jr. RoboCup",
+      "date": "01.01.17",
+      "image": "assets/images/Mariachi.jpg",
+      "description": "Developed an autonomous rescue robot for a simulation of a disaster zone, able to deliver rescue kits to victims.",
+      "link": "https://github.com/tomvik/RoBorregos-Japon"
     },
     {
-      "heading": "Project 2",
-      "date": "02.02.02",
+      "heading": "Natural Selection Sim",
+      "date": "27.10.19",
       "image": "assets/images/natural_selection.JPG",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "A graphical simulation of how Natural Selection changes the features of species throughout generations to survive.",
+      "link": "https://github.com/tomvik/NaturalSelection_SideProjects"
     },
     {
-      "heading": "Project 3",
-      "date": "03.03.03",
+      "heading": "Red Ball Tracker",
+      "date": "13.12.19",
       "image": "assets/images/red_ball.JPG",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "A simple red object tracker made in Python and OpenCV to experiment with this powerful computer vision library.",
+      "link": "https://github.com/tomvik/RedTracker"
+    },
+    {
+      "heading": "RoboCup @Home",
+      "date": "01.08.20",
+      "image": "assets/images/Home.jpg",
+      "description": "Contributed in the development of an assistance robot that can carry out household activities for the user.",
+      "link": "https://github.com/RoBorregos/Robocup-Home/wiki"
+    },
+    {
+      "heading": "RoBorregos Webpage",
+      "date": "01.08.20",
+      "image": "assets/images/roborregos.png",
+      "description": "Contributed in the development of RoBorrego's official webpage using React, Jest, and Github Actions for CI.",
+      "link": "http://roborregos.com/"
+    },
+    {
+      "heading": "ML plays Flappy Bird",
+      "date": "In progress",
+      "image": "assets/images/flappy_bird.JPG",
+      "description": "Made a flappy bird game using python, to later train a machine learning model to play the game.",
+      "link": "https://github.com/tomvik/FlappyBird_ML/tree/master"
     }
   ]
 }
