@@ -36,6 +36,13 @@
       "link": "http://roborregos.com/"
     },
     {
+      "heading": "Portfolio Webpage",
+      "date": "01.02.21",
+      "image": "assets/images/ProjectsWebsite.JPG",
+      "description": "Simple Portfolio website to showcase my projects and serve as a Resume using TS, React and Github pages as host.",
+      "link": "https://github.com/tomvik/Portfolio"
+    },
+    {
       "heading": "ML plays Flappy Bird",
       "date": "In progress",
       "image": "assets/images/flappy_bird.JPG",
