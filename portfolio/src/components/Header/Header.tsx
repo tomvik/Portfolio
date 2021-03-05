@@ -11,7 +11,7 @@ import {
   Fab,
 } from "@material-ui/core";
 import { Home, KeyboardArrowUp } from "@material-ui/icons";
-import { kNavLinks } from "../../urls";
+import { kNavLinks } from "../../data/urls";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
 import SideDrawer from "./SideDrawer";

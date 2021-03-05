@@ -9,7 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import { Menu } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
-import type { NavLinkType } from "../../urls";
+import type { NavLinkType } from "../../data/urls";
 
 type SideDrawerProps = {
   navLinks: NavLinkType;
