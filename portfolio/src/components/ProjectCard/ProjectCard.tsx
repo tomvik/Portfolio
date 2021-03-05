@@ -12,6 +12,8 @@ import { useBlogTextInfoContentStyles } from "@mui-treasury/styles/textInfoConte
 // @ts-ignore
 import { useOverShadowStyles } from "@mui-treasury/styles/shadow/over";
 
+const breaking_point = 960 + 233 + 40
+
 const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   root: {
     margin: "auto",
@@ -27,7 +29,9 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     flexDirection: "column",
     alignItems: "center",
     paddingBottom: spacing(2),
-    [breakpoints.up(960 + 233)]: {
+    minWidth: 250,
+    [breakpoints.up(breaking_point)]: {
+      minWidth: 500,
       flexDirection: "row",
       paddingTop: spacing(2),
     },
@@ -41,28 +45,44 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     paddingBottom: "48%",
     borderRadius: spacing(2),
     backgroundColor: "#fff",
-    position: "relative",
-    [breakpoints.up(960 + 233)]: {
+    "&:after": {
+      content: '" "',
+      position: "absolute",
+      top: spacing(-3),
+      left: spacing(5),
+      width: "80%",
+      height: "48%",
+      borderRadius: spacing(2), // 16
+      opacity: 0.5,
+      backgroundImage: "linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)",
+    },
+    [breakpoints.up(breaking_point)]: {
       // Where does the 233 come from?
       width: "100%",
       marginLeft: spacing(-3),
       marginTop: 0,
       transform: "translateX(-8px)",
-    },
-    "&:after": {
-      content: '" "',
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundImage: "linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)",
-      borderRadius: spacing(2), // 16
-      opacity: 0.5,
+      "&:after": {
+        content: '" "',
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        borderRadius: spacing(2), // 16
+        opacity: 0.5,
+        backgroundImage: "linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)",
+      },
     },
   },
   content: {
     padding: 24,
+    minWidth: 250,
+    maxWidth: 351,
+    [breakpoints.up(breaking_point)]: {
+      minWidth: 250,
+      maxWidth: 250,
+    }
   },
   cta: {
     marginTop: 24,
@@ -92,14 +112,14 @@ export const ProjectCard = React.memo(function BlogCard({
   return (
     <Card className={cx(styles.root, shadowStyles.root)}>
       <CardMedia className={styles.media} image={image} />
-      <CardContent>
+      <CardContent className={styles.content}>
         <TextInfoContent
           classes={contentStyles}
           overline={date}
           heading={heading}
           body={description}
         />
-        <Button className={buttonStyles}>Read more</Button>
+        <Button className={buttonStyles}>Learn more</Button>
       </CardContent>
     </Card>
   );

@@ -33,9 +33,9 @@ const Projects = () => {
       <Grid
         container
         direction="column"
-        spacing={8}
+        spacing={6}
         justify="space-around"
-        xs={12}
+        sm={12}
         alignItems="center"
         className={classes.outerGridStyle}
       >
@@ -43,7 +43,7 @@ const Projects = () => {
           <Grid
             container
             direction="row"
-            spacing={8}
+            spacing={6}
             justify="space-around"
             alignItems="center"
           >
