@@ -12,7 +12,7 @@ import { useBlogTextInfoContentStyles } from "@mui-treasury/styles/textInfoConte
 // @ts-ignore
 import { useOverShadowStyles } from "@mui-treasury/styles/shadow/over";
 
-const breaking_point = 960 + 233 + 40
+const breaking_point = 960 + 233 + 40;
 
 const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   root: {
@@ -82,15 +82,15 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     [breakpoints.up(breaking_point)]: {
       minWidth: 250,
       maxWidth: 250,
-    }
+    },
   },
   cta: {
     marginTop: 24,
     textTransform: "initial",
   },
   linkButton: {
-    textDecoration: "none"
-  }
+    textDecoration: "none",
+  },
 }));
 
 type ProjectCardProps = {
@@ -106,7 +106,7 @@ export const ProjectCard = React.memo(function BlogCard({
   description,
   date,
   image,
-  link
+  link,
 }: ProjectCardProps) {
   const styles = useStyles();
   const {
@@ -124,10 +124,13 @@ export const ProjectCard = React.memo(function BlogCard({
           heading={heading}
           body={description}
         />
-        <a href={link} target="_blank" rel="noreferrer" className={styles.linkButton}>
-          <Button className={buttonStyles}>
-            Learn more
-        </Button>
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.linkButton}
+        >
+          <Button className={buttonStyles}>Learn more</Button>
         </a>
       </CardContent>
     </Card>
