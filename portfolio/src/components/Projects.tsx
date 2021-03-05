@@ -8,7 +8,6 @@ const useStyles = makeStyles({
   outerGridStyle: {
     marginTop: "5px",
     marginBottom: "5px",
-    marginLeft: "5px",
   },
 });
 
