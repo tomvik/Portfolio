@@ -88,6 +88,9 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     marginTop: 24,
     textTransform: "initial",
   },
+  linkButton: {
+    textDecoration: "none"
+  }
 }));
 
 type ProjectCardProps = {
@@ -95,6 +98,7 @@ type ProjectCardProps = {
   description: string;
   date: string;
   image: string;
+  link: string;
 };
 
 export const ProjectCard = React.memo(function BlogCard({
@@ -102,6 +106,7 @@ export const ProjectCard = React.memo(function BlogCard({
   description,
   date,
   image,
+  link
 }: ProjectCardProps) {
   const styles = useStyles();
   const {
@@ -119,7 +124,11 @@ export const ProjectCard = React.memo(function BlogCard({
           heading={heading}
           body={description}
         />
-        <Button className={buttonStyles}>Learn more</Button>
+        <a href={link} target="_blank" rel="noreferrer" className={styles.linkButton}>
+          <Button className={buttonStyles}>
+            Learn more
+        </Button>
+        </a>
       </CardContent>
     </Card>
   );

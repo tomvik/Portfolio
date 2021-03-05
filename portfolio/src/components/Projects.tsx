@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 const Projects = () => {
   const classes = useStyles();
 
-  const project_cards = projects.map(({ heading, description, date, image }) => {
+  const project_cards = projects.map(({ heading, description, date, image, link }) => {
     return (
       <Grid item>
         <ProjectCard
@@ -23,6 +23,7 @@ const Projects = () => {
           description={description}
           date={date}
           image={image}
+          link={link}
         />
       </Grid>
     )
