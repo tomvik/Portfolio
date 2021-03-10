@@ -1,23 +1,16 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Container, Paper } from "@material-ui/core";
+import { ContactForm } from "./ContactForm/ContactForm";
 
 const Contact = () => {
   return (
-    <Grid container direction="column">
-      <Grid item>
-        <Grid container direction="row">
-          <Grid item>1</Grid>
-          <Grid item>2</Grid>
-        </Grid>
-      </Grid>
-      <Grid item>
-        <Grid container direction="row">
-          <Grid item>3</Grid>
-          <Grid item>4</Grid>
-        </Grid>
-      </Grid>
-    </Grid>
-  );
+    <Container>
+      <Paper style={{ padding: 16 }}>
+        <ContactForm />
+      </Paper>
+    </Container>
+  )
+
 };
 
 export default Contact;
