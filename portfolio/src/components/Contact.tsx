@@ -9,8 +9,7 @@ const Contact = () => {
         <ContactForm />
       </Paper>
     </Container>
-  )
-
+  );
 };
 
 export default Contact;

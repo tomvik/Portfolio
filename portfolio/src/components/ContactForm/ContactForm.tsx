@@ -6,20 +6,20 @@ const inputFieldValues = [
   {
     name: "fullName",
     label: "Full Name",
-    id: "my-name"
+    id: "my-name",
   },
   {
     name: "email",
     label: "Email",
-    id: "my-email"
+    id: "my-email",
   },
   {
     name: "message",
     label: "Message",
     id: "my-message",
     multiline: true,
-    rows: 10
-  }
+    rows: 10,
+  },
 ];
 
 export const ContactForm = () => {
@@ -28,7 +28,7 @@ export const ContactForm = () => {
     handleFormSubmit,
     formIsValid,
     errors,
-    values
+    values,
   } = useFormControls();
 
   return (
@@ -48,7 +48,7 @@ export const ContactForm = () => {
             autoComplete="none"
             {...(errors[inputFieldValue.name] && {
               error: true,
-              helperText: errors[inputFieldValue.name]
+              helperText: errors[inputFieldValue.name],
             })}
           />
         );
@@ -59,9 +59,11 @@ export const ContactForm = () => {
         color="secondary"
         disabled={!formIsValid()}
       >
-        {
-          values.formSubmitted ? values.success ? "Successfully sent" : "Failed to send" : "Send Message"
-        }
+        {values.formSubmitted
+          ? values.success
+            ? "Successfully sent"
+            : "Failed to send"
+          : "Send Message"}
       </Button>
     </form>
   );

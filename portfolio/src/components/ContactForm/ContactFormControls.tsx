@@ -19,8 +19,8 @@ const PostContactForm = async (
     } else {
       errorCallback();
     }
-  }
-  xhr.send(data)
+  };
+  xhr.send(data);
 };
 
 const initialFormValues = {
@@ -28,7 +28,7 @@ const initialFormValues = {
   email: "",
   message: "",
   formSubmitted: false,
-  success: false
+  success: false,
 };
 
 export const useFormControls = () => {
@@ -54,7 +54,7 @@ export const useFormControls = () => {
         fieldValues.message.length !== 0 ? "" : "This field is required.";
 
     setErrors({
-      ...temp
+      ...temp,
     });
   };
 
@@ -62,7 +62,7 @@ export const useFormControls = () => {
     const { name, value } = e.target;
     setValues({
       ...values,
-      [name]: value
+      [name]: value,
     });
     validate({ [name]: value });
   };
@@ -71,7 +71,7 @@ export const useFormControls = () => {
     setValues({
       ...initialFormValues,
       formSubmitted: true,
-      success: true
+      success: true,
     });
   };
 
@@ -79,7 +79,7 @@ export const useFormControls = () => {
     setValues({
       ...initialFormValues,
       formSubmitted: true,
-      success: false
+      success: false,
     });
   };
 
@@ -107,6 +107,6 @@ export const useFormControls = () => {
     errors,
     handleInputValue,
     handleFormSubmit,
-    formIsValid
+    formIsValid,
   };
 };
