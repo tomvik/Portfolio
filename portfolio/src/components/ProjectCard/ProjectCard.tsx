@@ -54,7 +54,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
       height: "48%",
       borderRadius: spacing(2), // 16
       opacity: 0.5,
-      backgroundImage: "linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)",
+      backgroundImage: "linear-gradient(147deg, #311b92 0%, #a5a1ac 74%)",
     },
     [breakpoints.up(breaking_point)]: {
       // Where does the 233 come from?
@@ -71,7 +71,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
         height: "100%",
         borderRadius: spacing(2), // 16
         opacity: 0.5,
-        backgroundImage: "linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)",
+        backgroundImage: "linear-gradient(147deg, #311b92 0%, #a5a1ac 74%)",
       },
     },
   },
@@ -91,6 +91,14 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   linkButton: {
     textDecoration: "none",
   },
+  button: {
+    backgroundImage: "linear-gradient(147deg, #a5a1ac 0%, #311b92  74%)",
+    boxShadow: '0px 4px 32px rgba(252, 56, 56, 0.4)',
+    borderRadius: 100,
+    paddingLeft: 24,
+    paddingRight: 24,
+    color: '#ffffff'
+  }
 }));
 
 type ProjectCardProps = {
@@ -130,7 +138,7 @@ export const ProjectCard = React.memo(function BlogCard({
           rel="noreferrer"
           className={styles.linkButton}
         >
-          <Button className={buttonStyles}>Learn more</Button>
+          <Button className={styles.button}>Learn more</Button>
         </a>
       </CardContent>
     </Card>

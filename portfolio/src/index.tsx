@@ -7,6 +7,22 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import styled from "styled-components";
+import { MuiThemeProvider } from "@material-ui/core";
+import { createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme(
+  {
+    palette: {
+      primary: {
+        main: '#311b92',
+      },
+      secondary: {
+        main: '#ede7f6',
+      },
+    },
+  }
+);
+
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -19,9 +35,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Router basename="/Portfolio">
       <StyledWrapper>
-        <Header />
-        <App />
-        <Footer />
+        <MuiThemeProvider theme={theme}>
+          <Header />
+          <App />
+          <Footer />
+        </MuiThemeProvider>
       </StyledWrapper>
     </Router>
   </React.StrictMode>,
