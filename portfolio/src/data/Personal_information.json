@@ -1,0 +1,14 @@
+{
+  "personal_info": [
+    {
+      "title": "Welcome to my personal portfolio",
+      "text": [
+        "The intention of this webpage is to showcase the projects that I’ve worked on as a hobby. Some of these projects are meaningful towards my curricular history, meaning that they are already present either in my LinkedIn profile or my Resume. However, the rest do not provide much weight to my application; hence, they were nowhere to be found, excluding Github, until now.",
+        "I began these projects out of curiosity and boredom. The fun of learning and doing something was what pushed me to put my limited time and effort into them after attending my responsibilities at school, work, and towards my physical and mental health. Being this my motivation, for the most part it wasn’t an issue to not have them public. However, after some years, I realized that I didn’t want these projects to live only in my (and Github’s) memory, so I figured that an online portfolio could be a great option.",
+        "These projects range widely in complexity, some are a simple proof of concept lasting a couple of days, and some were a team effort that took months, and some are still ongoing projects. But all of them were full of lessons, and amazing experiences.",
+        "Even though the main intention of this portfolio is a professional one, I truly don’t mind if it never helps me to achieve an admission anywhere (however the possibility sounds great), what would be most amazing for me is to inspire someone to do their own projects, and entertain themselves while also growing a set of skills. So to you, reader, if you’re a developer like me and want to start building a portfolio of projects, I hope this helps you.",
+        "Finally, thank you for your time and for visiting my webpage."
+      ]
+    }
+  ]
+}
