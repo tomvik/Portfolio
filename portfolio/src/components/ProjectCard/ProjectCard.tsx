@@ -93,7 +93,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   },
   button: {
     backgroundImage: "linear-gradient(147deg, #a5a1ac 0%, #311b92  74%)",
-    boxShadow: '0px 4px 32px rgba(252, 56, 56, 0.4)',
+    boxShadow: '0px 4px 32px rgba(34, 35, 58, 0.2)',
     borderRadius: 100,
     paddingLeft: 24,
     paddingRight: 24,
