@@ -55,6 +55,13 @@
       "image": "assets/images/piano_tile_machine.JPG",
       "description": "Made a python script to play Piano Tile autonomously. It takes screenshots and moves the mouse to the best tile.",
       "link": "https://github.com/tomvik/Piano-Tile-Machine"
+    },
+    {
+      "heading": "Stack Tower Machine",
+      "date": "13.07.22",
+      "image": "assets/images/stack_tower_machine.jpg",
+      "description": "Made a python script to play Stack the Tower autonomously. It takes tracks the moving block to determine when to click.",
+      "link": "https://github.com/tomvik/Stack-Tower-Machine"
     }
   ]
 }
