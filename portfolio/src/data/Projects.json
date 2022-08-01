@@ -60,7 +60,7 @@
       "heading": "Stack Tower Machine",
       "date": "13.07.22",
       "image": "assets/images/stack_tower_machine.jpg",
-      "description": "Made a python script to play Stack the Tower autonomously. It takes tracks the moving block to determine when to click.",
+      "description": "Made a python script to play Stack the Tower autonomously. It tracks the moving block to determine when to click.",
       "link": "https://github.com/tomvik/Stack-Tower-Machine"
     }
   ]
