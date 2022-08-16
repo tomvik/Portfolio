@@ -62,6 +62,13 @@
       "image": "assets/images/stack_tower_machine.jpg",
       "description": "Made a python script to play Stack the Tower autonomously. It tracks the moving block to determine when to click.",
       "link": "https://github.com/tomvik/Stack-Tower-Machine"
+    },
+    {
+      "heading": "Labyrinth Solver",
+      "date": "15.08.22",
+      "image": "assets/images/labyrinth_solver.gif",
+      "description": "Made a python script to fetch a random Maze and then solve it using BFS.",
+      "link": "https://github.com/tomvik/Labyrinth-Solver"
     }
   ]
 }
