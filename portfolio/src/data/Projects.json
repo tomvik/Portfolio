@@ -45,8 +45,8 @@
     {
       "heading": "ML plays Flappy Bird",
       "date": "In progress",
-      "image": "assets/images/flappy_bird.JPG",
-      "description": "Made a flappy bird game using python, to later train a machine learning model to play the game.",
+      "image": "assets/images/flappy_bird.gif",
+      "description": "Made a flappy bird game using python, to later train a machine learning model to play the game using NEAT.",
       "link": "https://github.com/tomvik/FlappyBird_ML/tree/master"
     },
     {
