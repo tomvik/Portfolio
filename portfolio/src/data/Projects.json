@@ -69,6 +69,13 @@
       "image": "assets/images/labyrinth_solver.gif",
       "description": "Made a python script to fetch a random Maze and then solve it using BFS.",
       "link": "https://github.com/tomvik/Labyrinth-Solver"
+    },
+    {
+      "heading": "Labyrinth Solver",
+      "date": "09.06.23",
+      "image": "assets/images/mine_sweeper.gif",
+      "description": "Made a minesweeper game in Unity. Then made a python script to solve it.",
+      "link": "https://github.com/tomvik/Mine-sweeper"
     }
   ]
 }
